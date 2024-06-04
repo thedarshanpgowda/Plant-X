@@ -2,6 +2,9 @@ import React from 'react'
 import Navbar from '../navbar/Navbar'
 import './Landing.css'
 import Leftcontainer from './Leftcontainer'
+import CommonAilements from './CommonAilements'
+import Footer from './Footer'
+import img from '../../images/imageLogo.png'
 
 export default function Landing() {
     return (
@@ -12,12 +15,13 @@ export default function Landing() {
             <div className="actualContainer">
                 <Leftcontainer />
                 <div className="rightContainer">
-
+                    <img src={img} alt="" />
                 </div>
             </div>
             <div className="commonAilements">
-                <h1></h1>
+                <CommonAilements />
             </div>
+            <Footer />
         </div>
     )
 }

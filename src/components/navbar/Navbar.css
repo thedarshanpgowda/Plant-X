@@ -13,6 +13,7 @@
 .navbarContainer-bg {
     background: #385043;
     color: #fefefe;
+    display: none;
 }
 
 .navbar {

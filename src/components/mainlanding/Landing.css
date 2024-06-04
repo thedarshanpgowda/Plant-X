@@ -20,6 +20,9 @@
 .rightContainer {
     width: 40%;
     background: #385043;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .leftContainer h1 {
@@ -59,4 +62,67 @@
 .callToActionBtn img {
     height: 20px;
     filter: invert(1);
+}
+
+.commonAilements {
+    padding: 50px;
+}
+
+.commonAilements .header {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.imageContaienr {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imageContaienr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plantDiseaseName {
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.eachAilement p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.eachAilement {
+    width: 300px;
+}
+
+.commonDiseases {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.viewAllButton {
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 2px #385043 solid;
+    margin: 50px auto 0;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr;
+    background: #2F2E2F32;
+    padding: 40px 20px;
 }
