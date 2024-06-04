@@ -1,0 +1,40 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 97vw;
+    left: 0;
+    height: 75px;
+    z-index: 1;
+}
+
+.navbarContainer-bg {
+    background: #385043;
+    color: #fefefe;
+}
+
+.navbar {
+    margin-right: 40px;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 12px;
+    font-size: 20px;
+    list-style: none;
+    padding: 0px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar li:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.navbar li:not(.navbar li:first-child) {
+    color: #fefeff;
+}

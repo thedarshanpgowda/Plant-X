@@ -1,0 +1,62 @@
+.actualContainer {
+    display: flex;
+}
+
+.leftContainer,
+.rightContainer {
+    height: 100vh;
+    z-index: -1;
+}
+
+.leftContainer {
+    background: #fefeff;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.rightContainer {
+    width: 40%;
+    background: #385043;
+}
+
+.leftContainer h1 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+.leftContainer .mainContent {
+    font-size: 16px;
+}
+
+.leftContainer span:first-child {
+    color: #385043;
+}
+
+.leftContainer span:last-child {
+    text-decoration: underline;
+}
+
+.leftInnerContainer {
+    padding-left: 45px;
+}
+
+.callToActionBtn {
+    padding: 6px 15px;
+    width: 30%;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: #385043;
+    color: #fefeff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.callToActionBtn img {
+    height: 20px;
+    filter: invert(1);
+}
