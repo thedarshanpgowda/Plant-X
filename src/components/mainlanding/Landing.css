@@ -1,3 +1,7 @@
+* {
+    font-family: "Manrope", sans-serif;
+}
+
 .actualContainer {
     display: flex;
 }
@@ -26,21 +30,28 @@
 }
 
 .leftContainer h1 {
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 10px;
     font-size: 60px;
+    font-family: "McLaren", sans-serif;
 }
 
 .leftContainer .mainContent {
     font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 27px;
 }
 
 .leftContainer span:first-child {
     color: #385043;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
 }
 
 .leftContainer span:last-child {
     text-decoration: underline;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
 }
 
 .leftInnerContainer {
@@ -71,8 +82,9 @@
 .commonAilements .header {
     font-weight: 400;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
+    font-family: "McLaren", sans-serif;
 }
 
 .imageContaienr {
@@ -92,22 +104,25 @@
     font-weight: 600;
     margin: 10px 0;
     font-size: 22px;
+    font-family: "McLaren", sans-serif;
 }
 
 .eachAilement p {
     font-size: 16px;
     margin: 0;
+    font-family: "Manrope", sans-serif;
+    line-height: 25px;
 }
 
 .eachAilement {
     width: 300px;
+    margin-left: 20px;
 }
 
 .commonDiseases {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 60px;
 }
 
 .viewAllButton {
@@ -125,4 +140,10 @@
     grid-template-columns: 2fr 2fr 1fr 2fr;
     background: #2F2E2F32;
     padding: 40px 20px;
+}
+
+@media screen and (min-width: 1100px) {
+    .rightContainer {
+        display: none;
+    }
 }
