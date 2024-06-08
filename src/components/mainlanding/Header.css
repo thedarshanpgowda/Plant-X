@@ -1,0 +1,26 @@
+.headerContainer {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.menuIcon img {
+    height: 35px;
+}
+
+.menuIcon {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}

@@ -142,8 +142,118 @@
     padding: 40px 20px;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .rightContainer {
         display: none;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .commonAilements {
+        padding: 0 0 20px;
+    }
+
+    .commonDiseases {
+        margin: 15px;
+    }
+
+    .imageContaienr {
+        height: 250px;
+        width: 250px;
+    }
+
+    .eachAilement {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width : 850px) {
+
+    .commonDiseases {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 60px;
+    }
+
+    .eachAilement {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .leftInnerContainer h1 {
+        font-size: 45px;
+    }
+
+    .mainContent {
+        font-weight: 300;
+        width: 90%;
+    }
+
+    .mainContent br {
+        display: none;
+    }
+
+    .commonAilements .header {
+        font-size: 35px;
+    }
+
+    .footerContainer {
+        grid-template-columns: 1fr;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .leftContainer {
+        padding-left: 0;
+    }
+
+    .callToActionBtn {
+        width: 50%;
+    }
+
+    .commonAilements .header {
+        font-size: 30px;
+    }
+
+    .commonDiseases {
+        display: flex;
+        overflow: auto;
+        margin: 10px;
+    }
+
+    .commonDiseases::-webkit-scrollbar {
+        display: none;
+    }
+
+    .eachAilement {
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+        padding: 0;
+        /* margin-right: 10px; */
+    }
+
+    .leftInnerContainer {
+        padding-top: 45px;
+        padding-left: 20px;
+    }
+
+    .commonAilements .header {
+        text-align: left;
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .leftInnerContainer h1 {
+        font-size: 40px;
+        width: 300px;
+    }
+    .actualContainer{
+        margin: 50px 0 100px;
     }
 }

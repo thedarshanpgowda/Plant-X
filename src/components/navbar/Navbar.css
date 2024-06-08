@@ -10,18 +10,14 @@
     z-index: 1;
 }
 
-.navbarContainer-bg {
-    background: #385043;
-    color: #fefefe;
-    display: none;
-}
+
 
 .navbar {
     margin-right: 40px;
     display: flex;
 }
 
-.navbar li {
+.navbar li a {
     margin: 0 12px;
     font-size: 20px;
     list-style: none;
@@ -29,19 +25,79 @@
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
+    color: #385043;
 }
 
 .navbar li:hover {
     text-decoration: underline;
 }
 
-.navbar li:not(.navbar li:first-child) {
-    color: #000;
+li {
+    list-style: none;
 }
 
+.navbarContainer-bg {
+    background: #385043;
+}
+
+.navbarContainer-bg li a {
+    color: #fefefe;
+}
+
+@media screen and (min-width : 900px) {
+    .menuIcon {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 1100px) {
-    .navbar li {
-        color: #000;
+    .navbar li a:not(.navbar li:first-child a) {
+        color: #fefeff;
     }
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar li a {
+        color: #385043;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbarContainer {
+        height: 100vh;
+        background: #385043;
+        color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        width: 97vw;
+        margin: auto;
+        z-index: 1;
+        margin-top: -900%;
+    }
+
+    .mtop0{
+        margin-top: 0;
+    }
+
+    .navbarContainer li a {
+        color: #fefefe;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 250px;
+        margin-top: 100px;
+        justify-content: space-around;
+    }
+
+    .menuIcon {
+        display: block;
+        z-index: 100;
+    }
+
 }
