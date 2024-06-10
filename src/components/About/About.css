@@ -199,7 +199,7 @@
 
     .green-background {
         width: 100%;
-        height: 400px;
+        height: 300px;
     }
 
     .aboutcard-image {
@@ -213,6 +213,31 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .aboutcard-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .green-background {
+        padding: 0px;
+    }
+
+    .bold {
+        font-size: 20px;
+    }
 }
 
-@media screen and (max-width : 500px) {}
+@media screen and (max-width : 400px) {
+    .mango h1 {
+        font-size: 90px;
+        top: -75%;
+        left: -20%;
+    }
+
+    .about-para {
+        font-size: 13px;
+        line-height: 23px;
+        text-align: justify;
+    }
+}

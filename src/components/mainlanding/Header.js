@@ -12,7 +12,7 @@ export default function Header(props) {
   return (
     <div className="headerContainer">
       <div className="header">
-        <Link to={`/`}>{`${"Home >"}`} </Link>
+        <Link to={`/`}>{`Home >`} </Link>
         {data.map((eachVal, i) => {
           const headerVal = " " + eachVal.name + (i === data.length - 1 ? " " : " >")
           // console.log(headerVal)
