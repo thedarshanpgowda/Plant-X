@@ -4,7 +4,7 @@ import { AboutCards } from "./AboutCards";
 import { about } from "./AboutData";
 import Footer from "../mainlanding/Footer";
 
-export const About = () => {
+export default function About(){
   return (
     <div className="about-container">
       <div className="about-intro">

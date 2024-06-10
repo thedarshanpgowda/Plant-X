@@ -4,7 +4,8 @@ import NutrientTable from "./Nutrients";
 // import Navbar from "../navbar/Navbar";
 
 
-export const Analysis = () => {
+
+export default function Analysis() {
   return (
     <>
       <div className="analysis-container">
