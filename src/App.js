@@ -4,6 +4,7 @@ import { Suspense, lazy } from "react";
 
 import Landing from "./components/mainlanding/Landing";
 import Header from "./components/mainlanding/Header";
+import Upload from "./components/Upload/Upload";
 
 // Lazy load other components
 const HistoryPage = lazy(() => import('./components/history/History'));
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/history" element={<HistoryPage />} />
+          <Route path="/upload" element={<Upload />} />
           <Route path="/analysis" element={<AnalysisPage />} />
         </Routes>
       </Suspense>

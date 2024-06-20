@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Leftcontainer() {
     return (
@@ -9,10 +10,10 @@ export default function Leftcontainer() {
                     Know the <span>solution</span>
                 </h1>
                 <p className='mainContent'>At Plant Orbit, diagnose plant diseases instantly with just a photo. Keep your <br /> plants healthy, effortlessly.</p>
-                <div className="callToActionBtn">
+                <Link to={'/upload'} className="callToActionBtn">
                     <p>Upload your Image</p>
                     <img src="https://cdn-icons-png.flaticon.com/512/860/860826.png" alt="" />
-                </div>
+                </Link>
             </div>
         </div>
     )

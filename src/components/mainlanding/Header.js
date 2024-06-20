@@ -5,7 +5,7 @@ import './Header.css'
 export default function Header(props) {
   const data = [
     {
-      name: props.location.pathname === "/about" ? "About" : props.location.pathname === "/analysis" ? "Analysis" : props.location.pathname === "/history" ? "History" : "",
+      name: props.location.pathname === "/about" ? "About" : props.location.pathname === "/analysis" ? "Analysis" : props.location.pathname === "/history" ? "History" : "Upload",
       path: props.location.pathname
     }
   ]

@@ -65,6 +65,7 @@
     border-radius: 10px;
     background: #385043;
     color: #fefeff;
+    cursor: pointer;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
