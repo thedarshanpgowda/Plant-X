@@ -5,15 +5,14 @@ import { Suspense, lazy } from "react";
 import Landing from "./components/mainlanding/Landing";
 import Header from "./components/mainlanding/Header";
 import Upload from "./components/Upload/Upload";
+import Authenticate from "./components/authenticate/Authenticate";
 
-// Lazy load other components
 const HistoryPage = lazy(() => import('./components/history/History'));
 const AboutPage = lazy(() => import('./components/About/About'));
 const AnalysisPage = lazy(() => import('./components/Analysis/Analysis'));
 
 function App() {
   const location = useLocation();
-
   return (
     <>
       {location.pathname === "/" ? null : <Header location={location} />}
@@ -23,7 +22,9 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/upload" element={<Upload />} />
-          <Route path="/analysis" element={<AnalysisPage />} />
+          {/* <Route element={<Authenticate />}> */}
+            <Route path="/analysis" element={<AnalysisPage />} />
+          {/* </Route> */}
         </Routes>
       </Suspense>
     </>

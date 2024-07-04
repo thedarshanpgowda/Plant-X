@@ -1,36 +1,32 @@
 import React from "react";
 import "./Analysis.css";
+import useAuth from "../../hooks.js/useAuth";
+import styles from "styled-components";
 
-const nutrients = [
-  { name: "Water", value: "74.5g" },
-  { name: "Copper", value: "74.5g" },
-  { name: "Carbohydrates", value: "23%" },
-  { name: "Fiber", value: "2-3%" },
-  { name: "Potassium", value: "0.3-0.4%" },
-  { name: "Other Minerals", value: "74.5g" },
-];
 
-const minerals = [
-  { name: "water", value: "10g" },
-  { name: "copper", value: "20g" },
-];
+
 const NutrientTable = () => {
-  return (
+  const { response } = useAuth()
+  const nutrients = response.response
+  return nutrients && (
     <div className="nutrient-content">
       {<h1>Nutrient Content</h1>}
       <div className="nutrient-container">
-        {nutrients.map((nutrient) => (
-          <div  key={nutrient.name} className="actualReadings">
-            <div className="nutrient">
-              <div className="nutrient-name">{nutrient.name}</div>
-              <div className="nutrient-value">{nutrient.value}</div>
+        {Object.entries(nutrients).map(((nutrient, i) => {
+          console.log(nutrient)
+          return (
+            <div key={Math.random()} className={`actualReadings actualReadings${i}`}>
+              <div className="nutrient">
+                <div className="nutrient-name">{nutrient[0]}</div>
+                <div className="nutrient-value">{nutrient[1]}</div>
+              </div>
+              <div className="nutrient">
+                <div className="nutrient-name">{nutrient[0]}</div>
+                <div className="nutrient-value">{nutrient[0] === "Boron" ? "0.16" : nutrient[0] === "Healthy" ? "0" : nutrient[1]}</div>
+              </div>
             </div>
-            <div className="nutrient">
-              <div className="nutrient-name">{nutrient.name}</div>
-              <div className="nutrient-value">{nutrient.value}</div>
-            </div>
-          </div>
-        ))}
+          )
+        }))}
       </div>
     </div>
   );

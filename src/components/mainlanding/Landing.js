@@ -16,13 +16,6 @@ export default function Landing() {
         console.log("object")
         setState(prev => !prev)
     }
-    const location = useLocation()
-    console.log(location.pathname)
-    document.addEventListener('click', () => {
-        if (location.pathname === "/") {
-            navigate("/upload", { state: location.pathname, replace: true })
-        }
-    })
 
     return (
         <div className="mainLandingContainer">
