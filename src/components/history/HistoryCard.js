@@ -8,17 +8,17 @@ export const HistoryCard = ({ card }) => {
     <div className="history-container">
       <div className="history-plantcards">
         <div className="history-image">
-          <img
-            src={card.image_url}
+          <img 
+            src={card.imageUrl}
             alt="no"
           ></img>
         </div>
         <div className="history-details">
-          <span className="plant-name">{card.nutrient}</span>
+          <span className="plant-name">{card.name}</span>
           <p>
             {card.description}
           </p>
-          <Link to={"/analysis"} className="history-view">View more..</Link>
+          {/* <Link to={"/analysis"} className="history-view">View more..</Link> */}
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ export default function CommonAilements() {
             <div className="commonDiseases">
                 <div className="eachAilement">
                     <div className="imageContaienr">
-                        <img src="https://img.freepik.com/free-photo/young-green-corn-growing-field-background_169016-13021.jpg?t=st=1717491381~exp=1717494981~hmac=689fa6e1334240647dbcc32278c3de1efca6827876dd1281fa605013196e1517&w=1380" alt="" />
+                        <img style={{rotate : "-90deg"}} src="http://www.agritech.tnau.ac.in/horticulture/plant_nutri/images/banana/b_n1.jpg" alt="" />
                     </div>
                     <div className="plantDiseaseName">
                     Nitrogen
@@ -17,7 +17,7 @@ export default function CommonAilements() {
                 </div>
                 <div className="eachAilement">
                     <div className="imageContaienr">
-                        <img src="https://img.freepik.com/premium-photo/low-angle-view-banana-tree_1048944-22549823.jpg?w=1060" alt="" />
+                        <img src="https://st.hzcdn.com/simgs/ea42c87904cf5056_9-2664/_.jpg" alt="" />
                     </div>
                     <div className="plantDiseaseName">
                     Potassium
@@ -26,12 +26,12 @@ export default function CommonAilements() {
                 </div>
                 <div className="eachAilement">
                     <div className="imageContaienr">
-                        <img src="https://img.freepik.com/free-photo/closeup-green-exotic-plant_23-2148245098.jpg?t=st=1717490670~exp=1717494270~hmac=01f79b7ed9c7c1a0600c22ccd9ba567c6456f20523bd3513a81a8692e67897bc&w=826" alt="" />
+                        <img src="https://www.researchgate.net/profile/Kimberly-Moore-12/publication/319250831/figure/fig1/AS:530588442791936@1503513550683/Iron-deficiency-chlorotic-areas-observed-on-Williams-bananas-grown-in-sugarcane.png" alt="" />
                     </div>
                     <div className="plantDiseaseName">
-                    Magnesium
+                    Iron
                     </div>
-                    <p> Magnesium is a critical component of chlorophyll, the molecule responsible for photosynthesis. </p>
+                    <p> Iron is a critical component of chlorophyll, the molecule responsible for photosynthesis. </p>
                 </div>
             </div>
             <Link to = {"/history"} className="viewAllButton">

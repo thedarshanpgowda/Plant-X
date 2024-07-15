@@ -28,7 +28,7 @@ export default function Landing() {
             <div className="actualContainer">
                 <Leftcontainer />
                 <div className="rightContainer">
-                    <img src={img} alt="" />
+                    <img src="https://images.unsplash.com/photo-1551551313-fe7031e26248?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJhbmFuYSUyMHBsYW50fGVufDB8MXwwfHx8MA%3D%3D" alt="" />
                 </div>
             </div>
             <div className="commonAilements">

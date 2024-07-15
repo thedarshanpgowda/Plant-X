@@ -33,7 +33,7 @@ export default function Navbar(props) {
       className={getClass()}
     >
       <div className="navbarLogo">
-        <h2>logo</h2>
+        <h2>Plant Orbit</h2>
       </div>
       <ul className="navbar">
         <li>

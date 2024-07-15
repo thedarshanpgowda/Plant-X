@@ -12,6 +12,16 @@
     /* z-index: -1; */
 }
 
+.leftInnerContainer .moto{
+    font-size: 20px;
+}
+
+.rightContainer img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .leftContainer {
     background: #fefeff;
     width: 60%;

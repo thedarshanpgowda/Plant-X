@@ -11,12 +11,20 @@ const Bar = styled.div`
   background-color: #a7cfa7c7;
 `;
 
+const standardValues = {
+  Boron: 0.16,
+  Calcium: 0.03,
+  Iron: 0.25,
+  Potassium: 3.05,
+  // Add other standard values here
+};
+
 const NutrientTable = () => {
   const { response } = useAuth();
   const nutrients = response.response;
 
   // Separate the Most Likely Deficiency from other nutrients
-  const { Most_Likely_Deficiency, ...otherNutrients } = nutrients || null;
+  const { Most_Likely_Deficiency, ...otherNutrients } = nutrients || {};
 
   return nutrients && (
     <div className="nutrient-content">
@@ -24,16 +32,15 @@ const NutrientTable = () => {
       <div className="nutrient-container">
         {Object.entries(otherNutrients).map(([name, values], i) => (
           <div key={i} className={`blockContainer blockContainer${i}`}>
-            
             <div className={`actualReadings actualReadings${i}`}>
               <div className="nutrient">
-                <div className="nutrient-name">
-                  <span>{name} </span> (<span><b>{(values.Healthy * 100).toFixed(2)}%</b></span>)
-                </div>
-                <div className="nutrient-value">
-                  {/* <div>Deficiency: {values.Deficiency}</div> */}
-                  {/* <div>Healthy: {(values.Healthy * 100).toFixed(2)}%</div> */}
-                  {/* <div>Deficient: {(values.Deficient * 100).toFixed(2)}%</div> */}
+                <div className="nutrient-details">
+                  <div className="nutrient-name">
+                    <span className="nutrientName">{name}</span>&nbsp; : &nbsp;<span><b>{(values.Healthy).toFixed(4)}mg</b></span>
+                  </div>
+                  <div className="standard-value">
+                    Standard: <b>{standardValues[name]}mg</b>
+                  </div>
                 </div>
               </div>
             </div>

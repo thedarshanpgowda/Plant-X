@@ -5,10 +5,11 @@ export default function Leftcontainer() {
     return (
         <div className="leftContainer">
             <div className="leftInnerContainer">
-                <h1>
-                    Post a <span>pic</span> & <br />
+                <h1>Know your Banana plant's health</h1>
+                <p className='moto'>
+                    Post a <span><b>pic</b></span> & 
                     Know the <span>solution</span>
-                </h1>
+                </p>
                 <p className='mainContent'>Diagnose plant diseases instantly with just a photo. Keep your <br /> plants healthy, effortlessly.</p>
                 <Link to={'/upload'} className="callToActionBtn">
                     <p>Upload your Image</p>
