@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function CommonAilements() {
     return (
         <>
-            <p className='header'>Most Common Plant Ailments</p>
+            <p className='header'>Most Common Plant Nutrient Deficients</p>
             <div className="commonDiseases">
                 <div className="eachAilement">
                     <div className="imageContaienr">

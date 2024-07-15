@@ -47,6 +47,7 @@ function App() {
       try {
         const result = await axios.post(" http://localhost:3000/upload", formdata)
         updateResponse({ ...result.data, img: previewURL })
+        console.log(result.data.response)
         navigate("/analysis", { state: location, replace: true })
       } catch (e) {
         console.log(e)

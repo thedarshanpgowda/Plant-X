@@ -9,7 +9,7 @@ export function AuthProvider({ children }) {
     const [response, setResponse] = useState(null)
 
     const updateResponse = (data) => {
-        console.log(data)
+        // console.log(data)
         if (data) {
             setResponse(data)
         }

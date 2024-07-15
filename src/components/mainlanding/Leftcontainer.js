@@ -9,7 +9,7 @@ export default function Leftcontainer() {
                     Post a <span>pic</span> & <br />
                     Know the <span>solution</span>
                 </h1>
-                <p className='mainContent'>At Plant Orbit, diagnose plant diseases instantly with just a photo. Keep your <br /> plants healthy, effortlessly.</p>
+                <p className='mainContent'>Diagnose plant diseases instantly with just a photo. Keep your <br /> plants healthy, effortlessly.</p>
                 <Link to={'/upload'} className="callToActionBtn">
                     <p>Upload your Image</p>
                     <img src="https://cdn-icons-png.flaticon.com/512/860/860826.png" alt="" />
