@@ -1,287 +1,285 @@
 * {
-    font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .actualContainer {
-    display: flex;
+  display: flex;
 }
 
 .leftContainer,
 .rightContainer {
-    height: 100vh;
-    /* z-index: -1; */
+  height: 100vh;
+  /* z-index: -1; */
 }
 
-.leftInnerContainer .moto{
-    font-size: 20px;
+.leftInnerContainer .moto {
+  font-size: 20px;
 }
 
-.rightContainer img{
-    width: 100%;
+.rightContainer img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .leftContainer {
-    background: #fefeff;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 50px;
+  background: #fefeff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
 }
 
 .rightContainer {
-    width: 40%;
-    background: #385043;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 40%;
+  background: #385043;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .leftContainer h1 {
-    font-weight: 300;
-    margin-bottom: 10px;
-    font-size: 60px;
-    font-family: "McLaren", sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-family: "McLaren", sans-serif;
 }
 
 .leftContainer .mainContent {
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    line-height: 27px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 27px;
 }
 
 .leftContainer span:first-child {
-    color: #385043;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
+  color: #385043;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
 }
 
 .leftContainer span:last-child {
-    text-decoration: underline;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
+  text-decoration: underline;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
 }
 
 .leftInnerContainer {
-    padding-left: 45px;
+  padding-left: 45px;
 }
 
 .callToActionBtn {
-    padding: 6px 15px;
-    width: 30%;
-    margin-top: 30px;
-    border-radius: 10px;
-    background: #385043;
-    color: #fefeff;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  padding: 6px 15px;
+  width: 30%;
+  margin-top: 30px;
+  border-radius: 10px;
+  background: #385043;
+  color: #fefeff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .callToActionBtn img {
-    height: 20px;
-    filter: invert(1);
+  height: 20px;
+  filter: invert(1);
 }
 
 .commonAilements {
-    padding: 50px;
+  padding: 50px;
 }
 
 .commonAilements .header {
-    font-weight: 400;
-    margin-bottom: 10px;
-    font-size: 45px;
-    text-align: center;
-    font-family: "McLaren", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-align: center;
+  font-family: "McLaren", sans-serif;
 }
 
 .imageContaienr {
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    border-radius: 15px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .imageContaienr img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .plantDiseaseName {
-    font-weight: 600;
-    margin: 10px 0;
-    font-size: 22px;
-    font-family: "McLaren", sans-serif;
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 22px;
+  font-family: "McLaren", sans-serif;
 }
 
 .eachAilement p {
-    font-size: 16px;
-    margin: 0;
-    font-family: "Manrope", sans-serif;
-    line-height: 25px;
+  font-size: 16px;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  line-height: 25px;
 }
 
 .eachAilement {
-    width: 300px;
-    margin-left: 20px;
+  width: 300px;
+  margin-left: 20px;
 }
 
 .commonDiseases {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 60px;
 }
 
 .viewAllButton {
-    padding: 15px 20px;
-    border-radius: 12px;
-    border: 2px #385043 solid;
-    margin: 50px auto 0;
-    width: 200px;
-    text-align: center;
-    cursor: pointer;
-    display: block;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 2px #385043 solid;
+  margin: 50px auto 0;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
 }
 
 .footerContainer {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 2fr;
-    background: #2F2E2F32;
-    padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 2fr;
+  background: #2f2e2f32;
+  padding: 40px 20px;
 }
 
 @media screen and (max-width: 1100px) {
-    .rightContainer {
-        display: none;
-    }
+  .rightContainer {
+    display: none;
+  }
 
-    .leftContainer,
-    .rightContainer {
-        height: 50vh;
-        width: 100%;
-    }
+  .leftContainer,
+  .rightContainer {
+    height: 50vh;
+    width: 100%;
+  }
 
-    .commonAilements {
-        padding: 0 0 20px;
-    }
+  .commonAilements {
+    padding: 0 0 20px;
+  }
 
-    .commonDiseases {
-        margin: 15px;
-    }
+  .commonDiseases {
+    margin: 15px;
+  }
 
-    .imageContaienr {
-        height: 250px;
-        width: 250px;
-    }
+  .imageContaienr {
+    height: 250px;
+    width: 250px;
+  }
 
-    .eachAilement {
-        width: 250px;
-    }
+  .eachAilement {
+    width: 250px;
+  }
 }
 
-@media screen and (max-width : 850px) {
+@media screen and (max-width: 850px) {
+  .commonDiseases {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin: 30px 60px; */
+  }
 
-    .commonDiseases {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* margin: 30px 60px; */
-    }
+  .leftContainer {
+    padding: 0;
+  }
 
-    .leftContainer {
-        padding: 0;
-    }
+  .callToActionBtn {
+    width: 40%;
+  }
 
-    .callToActionBtn {
-        width: 40%;
-    }
+  .imageContaienr {
+    height: 200px;
 
-    .imageContaienr {
-        height: 200px;
+    width: 200px;
+  }
 
-        width: 200px;
-
-    }
-
-    .eachAilement {
-        margin: 20px;
-    }
+  .eachAilement {
+    margin: 20px;
+  }
 }
 
-@media screen and (max-width : 700px) {
-    .leftInnerContainer h1 {
-        font-size: 45px;
-    }
-
-    .mainContent {
-        font-weight: 300;
-        width: 90%;
-    }
-
-    .mainContent br {
-        display: none;
-    }
-
-    .commonAilements .header {
-        font-size: 35px;
-    }
-
-    .footerContainer {
-        grid-template-columns: 1fr;
-        padding: 50px;
-    }
+@media screen and (max-width: 700px) {
 }
 
-@media screen and (max-width : 500px) {
-    .leftContainer {
-        padding-left: 0;
-    }
+@media screen and (max-width: 500px) {
+  .leftContainer h1 {
+    font-size: 26px;
+  }
+  .leftContainer,
+  .rightContainer {
+    width: 100vw;
+    margin: 40px auto 10px;
+  }
+  .mainLandingContainer {
+    width: 100vw;
+  }
+  .actualContainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .commonAilements .header {
+    font-size: 26px;
+  }
 
-    .callToActionBtn {
-        width: 50%;
-    }
+  .imageContaienr {
+    height: 140px;
+    width: 140px;
+  }
 
-    .commonAilements .header {
-        font-size: 30px;
-    }
+  .plantDiseaseName {
+    font-size: 18px;
+  }
+  .eachAilement {
+    width: 175px;
+  }
 
-    .commonDiseases {
-        display: flex;
-        overflow: auto;
-        margin: 10px;
-    }
+  .eachAilement p {
+    width: 165px;
+    font-size: 13px;
+  }
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 
-    .commonDiseases::-webkit-scrollbar {
-        display: none;
+@media screen and (max-width: 480px) {
+    .leftInnerContainer{
+        padding: 20px;
     }
-
-    .eachAilement {
-        scroll-behavior: smooth;
-        scroll-snap-align: start;
-        padding: 0;
-        /* margin-right: 10px; */
-    }
-
-    .leftInnerContainer {
-        padding-top: 45px;
-        padding-left: 20px;
-    }
-
-    .commonAilements .header {
-        text-align: left;
-        font-size: 27px;
-        margin-left: 20px;
-    }
-
-    .leftInnerContainer h1 {
-        font-size: 40px;
-        width: 300px;
-    }
-
-    .actualContainer {
-        margin: 50px 0 100px;
-    }
+  .commonDiseases {
+    grid-template-columns: 1fr;
+  }
+  .eachAilement {
+    width: 85%;
+  }
+  .imageContaienr {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }
+  .eachAilement p {
+    width: 85%;
+    font-size: 13px;
+    margin: auto;
+  }
+  .plantDiseaseName{
+    text-align: center;
+  }
+  .callToActionBtn {
+    width: 85%;
+  }
 }
