@@ -3,12 +3,22 @@ import './Upload.css'; // Use updated CSS file name
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router';
 import useAuth from '../../hooks.js/useAuth';
+import { useDispatch, useSelector } from 'react-redux';
+import { setReduxFile, setReduxLoading, setReduxPreviewURL } from '../../store/initialSlice';
 
 function App() {
-  const [file, setFile] = useState(null);
-  const [previewURL, setPreviewURL] = useState('');
-  const [description, setDescription] = useState('');
-  const [loading, setloading] = useState(false)
+  // const [file, setFile] = useState(null);
+  // const [previewURL, setPreviewURL] = useState('');
+  // const [loading, setloading] = useState(false)
+
+
+  const file = useSelector(state => state.initial.file)
+  const loading = useSelector(state => state.initial.loading)
+  const previewURL = useSelector(state => state.initial.previewURL)
+
+  const dispatch = useDispatch()
+
+
   const location = useLocation()
   const navigate = useNavigate()
   const { updateResponse } = useAuth()
@@ -16,10 +26,12 @@ function App() {
     if (e.target.files && e.target.files[0]) {
       const reader = new FileReader();
       reader.onload = function (event) {
-        setPreviewURL(event.target.result);
+        // setPreviewURL(event.target.result);
+        dispatch(setReduxPreviewURL(event.target.result))
       };
       reader.readAsDataURL(e.target.files[0]);
-      setFile(e.target.files[0]);
+      dispatch(setReduxFile(e.target.files[0]))
+      // setFile(e.target.files[0]);
 
     }
 
@@ -28,18 +40,19 @@ function App() {
   };
 
   const handleRemoveImage = () => {
-    setFile(null);
-    setPreviewURL('');
+    dispatch(setReduxFile(null))
+    // setFile(null);
+    dispatch(setReduxPreviewURL(''))
+    // setPreviewURL('');
   };
 
-  const handleDescriptionChange = (e) => {
-    setDescription(e.target.value);
-  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (file) {
-      setloading(true)
+      // setloading(true)
+      dispatch(setReduxLoading(true))
       console.log('File:', file);
       let formdata = new FormData()
       formdata.append("photo", file)
@@ -52,7 +65,8 @@ function App() {
       } catch (e) {
         console.log(e)
       } finally {
-        setloading(false)
+        // setloading(false)
+        dispatch(setReduxLoading(false))
       }
     } else {
       alert('Please select a file to upload.');
@@ -61,7 +75,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>{loading? "Analysing the image..." : "Upload File"} <span>with description</span></h1>
+      <h1>{loading ? "Analysing the image..." : "Upload File"} <span>with description</span></h1>
       <form onSubmit={handleSubmit} className="upload-form" encType='multipart/form-data'>
         <div className="file-upload">
           {previewURL && (
@@ -79,15 +93,6 @@ function App() {
           )}
           <input type="file" name='photo' id="upload" onChange={handleFileChange} />
         </div>
-        {/* <div className="form-group">
-          <label htmlFor="description">Description:</label>
-          <textarea
-            id="description"
-            value={description}
-            onChange={handleDescriptionChange}
-            placeholder="Enter a description..."
-          />
-        </div> */}
         {!loading && <button type="submit" className="btn-submit">
           Upload
         </button>}

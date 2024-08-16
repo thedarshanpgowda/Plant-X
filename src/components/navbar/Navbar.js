@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setReduxState } from "../../store/initialSlice";
 
 export default function Navbar(props) {
-  const [state, setState] = useState(false);
+  // const [state, setState] = useState(false);
+  const state = useSelector((state) => state.initial.state)
+  const dispatch = useDispatch()
+
   let value;
   const colorChanger = () => {
     if (window.scrollY > 75) {
-      setState(true);
+      dispatch(setReduxState(true))
+      // setState(true);
     } else {
-      setState(false);
+      // setState(false);
+      dispatch(setReduxState(false))
     }
   };
 
@@ -18,7 +25,7 @@ export default function Navbar(props) {
     return () => {
       window.removeEventListener("scroll", colorChanger);
     };
-  }, [setState]);
+  }, []);
 
   const getClass = () => {
     const baseClass = state ? "navbarContainer navbarContainer-bg" : "navbarContainer"

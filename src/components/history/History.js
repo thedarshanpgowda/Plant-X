@@ -30,9 +30,6 @@ export default function History() {
   return (
     <>
       <div className="history-container">
-
-
-
         {value.map((card, index) => (
           <HistoryCard key={Math.random()} card={card}
           />

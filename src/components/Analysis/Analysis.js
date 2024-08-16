@@ -3,15 +3,22 @@ import "./Analysis.css";
 import NutrientTable from "./Nutrients";
 import useAuth from "../../hooks.js/useAuth";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { setReduxRemedyDet, setReduxResult } from "../../store/initialSlice";
 
 export default function Analysis() {
   const { response } = useAuth();
 
-  const [result, setResult] = useState("");
-  const [remedyDet, setRemedyDet] = useState();
+  const result = useSelector((state) => state.initial.result)
+  const remedyDet = useSelector((state) => state.initial.remedy)
+  const dispatch = useDispatch()
+
+  // const [result, setResult] = useState("");
+  // const [remedyDet, setRemedyDet] = useState();
   const setRemediesValue = (data) => {
     console.log(data);
-    setResult(data);
+    // setResult(data);
+    dispatch(setReduxResult(data))
   };
 
   const fetchData = async (results) => {
@@ -21,14 +28,15 @@ export default function Analysis() {
         data: results?.response,
       });
       console.log(result);
-      setRemedyDet(result?.data);
+      // setRemedyDet(result?.data);
+      dispatch(dispatch(setReduxRemedyDet(result?.data)))
     } catch (e) {
       console.log(e);
     }
   };
 
   useEffect(() => {
-    if(response?.data){
+    if (response?.data) {
       fetchData(response.data);
     }
   }, []);
@@ -61,8 +69,8 @@ export default function Analysis() {
             <ul>
               {remedyDet
                 ? remedyDet.remedy.split("**").map((e) => {
-                    return <li key={Math.random()}>{e}</li>;
-                  })
+                  return <li key={Math.random()}>{e}</li>;
+                })
                 : "Generating..."}
             </ul>
           </div>
